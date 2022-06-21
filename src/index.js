@@ -24,9 +24,8 @@ ReactDOM.render(
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
       </Route>
-
     </Routes>
-  
+
     <Footer />
   </Router>,
 
