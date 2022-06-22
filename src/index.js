@@ -19,7 +19,7 @@ import FetchProduct from "./components/FetchProduct";
 
 ReactDOM.render(
   <Router>
-    {/* <Navigation /> */}
+    <Navigation />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
