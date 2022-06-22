@@ -15,10 +15,11 @@ import {
 import WomenStore from "./components/WomenStore";
 import MenStore from "./components/MenStore";
 import Accessories from "./components/Accessories";
+import FetchProduct from "./components/FetchProduct";
 
 ReactDOM.render(
   <Router>
-    <Navigation />
+    {/* <Navigation /> */}
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -27,9 +28,11 @@ ReactDOM.render(
       <Route path="/store/women" element={<WomenStore />} />
       <Route path="/store/men" element={<MenStore />} />
       <Route path="/store/accessories" element={<Accessories />} />
+      <Route path="/get/products" element={<FetchProduct/>}></Route>
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
+        
       </Route>
     </Routes>
 
