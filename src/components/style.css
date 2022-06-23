@@ -1,214 +1,246 @@
 .slider {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image {
-    width: 1000px;
-    height: 550px;
-    border-radius: 10px;
-    padding-top: 6%;
-    
-  }
-  .navbar{
-    background-color: rgb(60, 155, 174);
-  }
-  
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 2rem;
-    color:  rgb(172, 145, 145);
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 2rem;
-    color: rgb(172, 145, 145);
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 550px;
+  border-radius: 10px;
+  padding-top: 6%;
+}
+.navbar {
+  background-color: rgb(60, 155, 174);
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 2rem;
+  color: rgb(172, 145, 145);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 2rem;
+  color: rgb(172, 145, 145);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
 .app {
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background-color: #f8f9fd;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    height: 35px;
-    width: 200px;
-    margin-left: 84px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    
-    border-radius: 10px;
-    padding-left: 10px;
-  }
-  
-  input[type="submit"] {
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    background: #01d28e;
-    border: 1px solid #01d28e;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  
-  input[type="submit"]:hover {
-    background: #6cf0c2;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .login-form {
-    background-color: rgba(210, 90, 90, 0.2);;
-    padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 500px;
-    width: 450px;
-    margin-left: 28%;
-    margin-top: 10%;
-    margin-bottom: 6%;
-    border-radius: 10px;
-  }
-  
-  .list-container {
-    display: flex;
-  }
-  
-  .error {
-    color: red;
-    font-size: 12px;
-  }
-  
-  .title {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  
-  .input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 10px;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 12px;
-    background-color: rgb(221, 221, 152);
-  }
-  
-  .item {
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-    min-height: 370px;
-    margin-bottom: 20px;
-    background-color: rgba(195, 241, 238, 0.2);
-  }
-  .para {
-    font-size: 15px;
-  }
-  .main-heading {
-    text-align: center;
-  }
-  .underline {
-    text-align: center;
-  }
-  
-  .lab3 {
-    text-align: center;
-  }
-  .lab1 {
-    text-align: center;
-    margin-left: 400px;
-  }
-  
-  .lab2 {
-    text-align: center;
-    margin-left: 400px;
-  }
-  
-  .lab3 {
-    text-align: center;
-    margin-left: 400px;
-  }
-  
-  #btn {
-    color: black;
-    margin-left: 590px;
-    text-align: center;
-    background-color: rgb(239, 243, 190);
-    width: 200px;
-    
-  }
-  
-  #ip1 {
-    margin-left: 70px;
-  }
-  
-  #ip2 {
-    margin-left: 70px;
-  }
-  
-  #ip3 {
-    width: 400px;
-    margin-left: 10px;
-  }
-  
-  #body {
-    background-color: azure;
-    margin-top: 60px;
-    border: 2px solid black;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 30px;
-  }
-  
-  .con {
-    color: white;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 35px;
-  }
-  
-  .full {
-    background-color: rgb(205, 185, 224);
-    height: 465px;
-  }
-  .form-control{
-    width: auto;
-  }
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f8f9fd;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 35px;
+  width: 200px;
+  margin-left: 84px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: rgba(210, 90, 90, 0.2);
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 500px;
+  width: 450px;
+  margin-left: 28%;
+  margin-top: 10%;
+  margin-bottom: 6%;
+  border-radius: 10px;
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+.grid {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 12px;
+  /*background-color: rgb(221, 221, 152);*/
+  background: url(../static/11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item {
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  min-height: 470px;
+  margin-bottom: 20px;
+  background-color: rgba(195, 241, 238, 0.2);
+}
+.para {
+  font-size: 15px;
+}
+.main-heading {
+  text-align: center;
+}
+.underline {
+  text-align: center;
+}
+
+.lab3 {
+  text-align: center;
+}
+.lab1 {
+  text-align: center;
+  margin-left: 400px;
+}
+
+.lab2 {
+  text-align: center;
+  margin-left: 400px;
+}
+
+.lab3 {
+  text-align: center;
+  margin-left: 400px;
+}
+
+#btn {
+  color: black;
+  margin-left: 590px;
+  text-align: center;
+  background-color: rgb(239, 243, 190);
+  width: 200px;
+}
+
+#ip1 {
+  margin-left: 70px;
+}
+
+#ip2 {
+  margin-left: 70px;
+}
+
+#ip3 {
+  width: 400px;
+  margin-left: 10px;
+}
+
+#body {
+  /* background-color: azure; */
+  margin-top: 60px;
+  border: 2px solid black;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;
+}
+
+.con {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.full {
+  /* background-color: rgb(205, 185, 224); */
+  background: url(../static/10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 570px;
+}
+.form-control {
+  width: auto;
+}
+
+.button1 {
+  margin-top: 120px;
+  margin-left: 350px;
+  color: #ffffff;
+  background-color: rgba(235, 241, 117, 0.7);
+}
+
+.button2 {
+  margin-left: 350px;
+  color: #ffffff;
+  background-color: rgba(141, 222, 153, 0.7);
+}
+
+.button3 {
+  margin-bottom: 30px;
+  margin-left: 350px;
+  color: #ffffff;
+  background-color: rgba(121, 139, 223, 0.7);
+}
+
+#admin {
+  background: url(../static/14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+}

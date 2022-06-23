@@ -1,15 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./style.css";
 
 export default function Admin() {
   return (
-    <div className="container">
-    <div className="m-5 p-5">
-
-    <Link to="/prodlist"><button className="btn btn-primary">View Product List</button></Link>
-    <Link to="/custlist"><button className="btn btn-success">View Customer List</button></Link>
-    <button className="btn btn-danger">View Order List</button>
+    <div className="container" id="admin">
+      <div className="m-5 p-5">
+        <Link to="/prodlist">
+          <button className="button1">View Product List</button>
+        </Link>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Link to="/custlist">
+          <button className="button2">View Customer List</button>
+        </Link>
+        <br></br>
+        <br></br>
+        <br></br>
+        <button className="button3">View Order List</button>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
