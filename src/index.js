@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AddCustomer from "./components/AddCustomer";
+import Customer from "./components/Customer";
 import CustomerList from "./components/CustomerList";
 import NotFound from "./components/NotFound";
 import AddProduct from "./components/AddProduct";
