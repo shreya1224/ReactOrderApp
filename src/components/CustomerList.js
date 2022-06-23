@@ -37,6 +37,9 @@ const CustomerList = () => {
 
   return (
     <div className="container">
+      <br></br>
+      <br></br>
+      <br></br>
       <h3>List of Customers</h3>
       <hr />
       <div>
