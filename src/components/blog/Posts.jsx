@@ -3,7 +3,7 @@ import "./style-blog.css";
 import "./App-blog.css";
 
 class Posts extends Component {
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     console.log(e.target.user.value);
 
@@ -25,7 +25,7 @@ class Posts extends Component {
     }
   };
 
-  handleClick = e => {
+  handleClick = (e) => {
     e.preventDefault();
 
     alert("Goes to loggin page");
@@ -34,7 +34,6 @@ class Posts extends Component {
   render() {
     return (
       <div className="App">
-        
         <form className="form" onSubmit={this.handleSubmit}>
           <div className="input-group">
             <label htmlFor="user">USER NAME</label>
@@ -42,7 +41,7 @@ class Posts extends Component {
           </div>
           <div className="input-group">
             <label htmlFor="password">PASSWORD</label>
-            <input type="password" name="password" placeholder="password"/>
+            <input type="password" name="password" placeholder="password" />
           </div>
           <button className="primary">LOGIN</button>
         </form>
