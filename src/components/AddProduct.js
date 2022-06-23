@@ -76,16 +76,7 @@ const AddProduct = () => {
             placeholder="Enter Price"
           />
         </div>
-        <div className="form-group">
-          <input
-            type="number"
-            className="form-control col-4"
-            id="quantity"
-            value={quantity}
-            onChange={(o) => setQuantity(o.target.value)}
-            placeholder="Enter Quantity"
-          />
-        </div>
+
         <div>
           <button onClick={(o) => saveProduct(o)} className="btn btn-primary">
             Save
