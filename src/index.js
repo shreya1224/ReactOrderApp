@@ -28,8 +28,6 @@ ReactDOM.render(
       <Route path="/store/women" element={<WomenStore />} />
       <Route path="/store/men" element={<MenStore />} />
       <Route path="/store/accessories" element={<Accessories />} />
-      {/* <Route path="/get/products" element={<FetchProduct/>}/>
-      <Route path="/save/product" element={<SaveProduct/>}/> */}
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
