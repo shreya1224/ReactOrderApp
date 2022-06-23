@@ -169,9 +169,11 @@
   
   #btn {
     color: black;
-    margin-left: 600px;
+    margin-left: 590px;
     text-align: center;
     background-color: rgb(239, 243, 190);
+    width: 200px;
+    
   }
   
   #ip1 {
@@ -205,5 +207,8 @@
   
   .full {
     background-color: rgb(205, 185, 224);
-    height: 530px;
+    height: 465px;
+  }
+  .form-control{
+    width: auto;
   }

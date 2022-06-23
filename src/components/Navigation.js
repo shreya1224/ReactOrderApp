@@ -26,6 +26,7 @@ function Navigation() {
           placeholder="Search"
           className="me-2"
           aria-label="Search"
+          
         />
         <Button variant="outline-dark">Search</Button>
       </Form>
@@ -51,7 +52,7 @@ function Navigation() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/blog">
-                  Blog
+                  Login
                 </NavLink>
               </li>
             </ul>

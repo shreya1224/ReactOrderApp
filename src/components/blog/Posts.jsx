@@ -1,89 +1,57 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-
-
+import React, { Component } from "react";
 import "./style-blog.css";
+import "./App-blog.css";
 
-function Posts() {
-  // React States
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+class Posts extends Component {
+  handleSubmit = e => {
+    e.preventDefault();
+    console.log(e.target.user.value);
 
-  // User Login info
-  const database = [
-    {
-      username: "admin",
-      password: "pass1"
-    },
-    {
-      username: "",
-      password: "pass2"
-    }
-  ];
-
-  const errors = {
-    uname: "invalid username",
-    pass: "invalid password"
-  };
-
-  const handleSubmit = (event) => {
-    //Prevent page reload
-    event.preventDefault();
-
-    var { uname, pass } = document.forms[0];
-
-    // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
-
-    // Compare user info
-    if (userData) {
-      if (userData.password !== pass.value) {
-        // Invalid password
-        setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
-        setIsSubmitted(true);
-      }
+    if (!e.target.user.value) {
+      alert("Username is required");
+    } else if (!e.target.user.value) {
+      alert("Valid username is required");
+    } else if (!e.target.password.value) {
+      alert("Password is required");
+    } else if (
+      e.target.user.value === "admin" &&
+      e.target.password.value === "123456"
+    ) {
+      alert("Successfully logged in");
+      e.target.user.value = "";
+      e.target.password.value = "";
     } else {
-      // Username not found
-      setErrorMessages({ name: "uname", message: errors.uname });
+      alert("Wrong username or password combination");
     }
   };
 
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
+  handleClick = e => {
+    e.preventDefault();
 
-  // JSX code for login form
-  const renderForm = (
-    <div className="form">
-      <form onSubmit={handleSubmit}>
-        <div className="input-container">
-          <label><center>Username</center> </label>
-          <input type="text" name="uname" required />
-          {renderErrorMessage("uname")}
-        </div>
-        <div className="input-container">
-          <label><center>Password</center></label>
-          <input type="password" name="pass" required />
-          {renderErrorMessage("pass")}
-        </div>
-        <div className="button-container">
-          <input type="submit" />
-        </div>
-      </form>
-    </div>
-  );
+    alert("Goes to loggin page");
+  };
 
-  return (
-    <div className="Posts">
-      <div className="login-form">
-        <div className="title"><h1><center>Sign In</center></h1></div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+  render() {
+    return (
+      <div className="App">
+        
+        <form className="form" onSubmit={this.handleSubmit}>
+          <div className="input-group">
+            <label htmlFor="user">USER NAME</label>
+            <input type="user" name="user" placeholder="user/admin" />
+          </div>
+          <div className="input-group">
+            <label htmlFor="password">PASSWORD</label>
+            <input type="password" name="password" placeholder="password"/>
+          </div>
+          <button className="primary">LOGIN</button>
+        </form>
+        <button className="secondary" onClick={this.handleClick}>
+          BACK
+        </button>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Posts;
