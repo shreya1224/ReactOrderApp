@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import "./style-blog.css";
 import "./App-blog.css";
+import { useNavigate } from "react-router-dom";
 
-class Posts extends Component {
-  handleSubmit = (e) => {
+function Posts() {
+  const navigate=useNavigate()
+  const handleSubmit = (e) => {
     e.preventDefault();
+    
     console.log(e.target.user.value);
 
     if (!e.target.user.value) {
@@ -17,7 +20,9 @@ class Posts extends Component {
       e.target.user.value === "admin" &&
       e.target.password.value === "123456"
     ) {
-      alert("Successfully logged in");
+      // alert("Successfully logged in");
+      navigate("/admin")
+      navigate(0)
       e.target.user.value = "";
       e.target.password.value = "";
     } else {
@@ -25,16 +30,17 @@ class Posts extends Component {
     }
   };
 
-  handleClick = (e) => {
+  const handleClick = (e) => {
     e.preventDefault();
 
     alert("Goes to loggin page");
   };
 
-  render() {
+  // render()
+  // {
     return (
       <div className="App">
-        <form className="form" onSubmit={this.handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="user">USER NAME</label>
             <input type="user" name="user" placeholder="user/admin" />
@@ -45,12 +51,12 @@ class Posts extends Component {
           </div>
           <button className="primary">LOGIN</button>
         </form>
-        <button className="secondary" onClick={this.handleClick}>
+        <button className="secondary" onClick={handleClick}>
           BACK
         </button>
       </div>
     );
-  }
-}
+//   }
+ }
 
 export default Posts;
