@@ -7,6 +7,7 @@ import CustomerList from "./components/CustomerList";
 import NotFound from "./components/NotFound";
 import AddProduct from "./components/AddProduct";
 import ProductList from "./components/ProductList";
+import Admin from "./components/Admin";
 import {
   Navigation,
   Footer,
@@ -32,6 +33,7 @@ ReactDOM.render(
       <Route path="/store/women" element={<WomenStore />} />
       <Route path="/store/men" element={<MenStore />} />
       <Route path="/store/accessories" element={<Accessories />} />
+      <Route path="/admin" element={<Admin />} />
       {/* <Route path="/customers" element={<Customer />}> */}
       <Route exact path="/custlist" element={<CustomerList />} />
       <Route path="/addcust" element={<AddCustomer />} />
