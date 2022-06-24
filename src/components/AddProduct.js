@@ -19,7 +19,6 @@ const AddProduct = () => {
       ProductService.update(product)
         .then((response) => {
           console.log("Product data updated successfully", response.data);
-          navigate("/");
         })
         .catch((error) => {
           console.log("Something went wrong", error);

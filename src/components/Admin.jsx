@@ -18,7 +18,9 @@ export default function Admin() {
         <br></br>
         <br></br>
         <br></br>
+        <Link to="/orderlist">
         <button className="button3">View Order List</button>
+        </Link>
       </div>
     </div>
   );

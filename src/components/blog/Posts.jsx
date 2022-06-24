@@ -18,11 +18,21 @@ function Posts() {
       alert("Password is required");
     } else if (
       e.target.user.value === "admin" &&
-      e.target.password.value === "123456"
+      e.target.password.value === "1234" 
     ) {
       // alert("Successfully logged in");
       navigate("/admin");
       navigate(0);
+      e.target.user.value = "";
+      e.target.password.value = "";
+    } 
+    else if (
+      e.target.user.value === "user" &&
+      e.target.password.value === "user" 
+    ) {
+      // alert("Successfully logged in");
+      navigate("/user")
+      navigate(0)
       e.target.user.value = "";
       e.target.password.value = "";
     } else {
@@ -36,8 +46,6 @@ function Posts() {
     alert("Goes to login page");
   };
 
-  // render()
-  // {
   return (
     <div className="fbody">
       <div className="App">
@@ -52,13 +60,13 @@ function Posts() {
           </div>
           <button className="primary">LOGIN</button>
         </form>
-        <button className="secondary" onClick={handleClick}>
+        {/* <button className="secondary" onClick={handleClick}>
           BACK
-        </button>
+        </button> */}
       </div>
     </div>
   );
-  //   }
-}
+     }
+
 
 export default Posts;

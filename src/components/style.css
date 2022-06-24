@@ -7,14 +7,17 @@
 }
 
 .image {
-  width: 990px;
-  height: 570px;
+  width: 850px;
+  height: 500px;
   border-radius: 10px;
   padding-top: 6%;
   padding-top: 2%;
 }
 .navbar {
   background-color: rgb(252, 254, 254);
+  padding-top:5px;
+  height: 10%;
+
 }
 
 .right-arrow {
@@ -46,8 +49,9 @@
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 2s;
   transform: scale(1.08);
+  animation-duration: 2s;
 }
 .app {
   font-family: sans-serif;
@@ -257,7 +261,7 @@ input[type="submit"]:hover {
 }
 .row {
   justify-content: center;
-  padding-left: 15%;
+  
 }
 #uprod {
   background-color: #f0d7bf;

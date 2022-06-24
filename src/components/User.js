@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import customerService from "../services/customer.service";
 
-const CustomerList = () => {
+const User = () => {
   const [customers, setCustomers] = useState([]);
 
   const init = () => {
@@ -43,10 +43,13 @@ const CustomerList = () => {
       <h3>List of Customers</h3>
       <hr />
       <div>
+        <Link to="/addcust" className="btn btn-primary mb-2">
+          Add User
+        </Link>
         <table className="table table-bordered table-striped">
           <thead className="thead-dark">
             <tr>
-            <th> Customer Id</th>
+            <th> User Id</th>
               <th> Name</th>
               <th> Address</th>
               <th> Actions</th>
@@ -59,6 +62,12 @@ const CustomerList = () => {
                 <td>{customer.cname}</td>
                 <td>{customer.caddress}</td>
                 <td>
+                  <Link
+                    className="btn btn-info"
+                    to={`/customers/edit/${customer.id}`}
+                  >
+                    Update
+                  </Link>
 
                   <button
                     className="btn btn-danger ml-2"
@@ -78,4 +87,4 @@ const CustomerList = () => {
   );
 };
 
-export default CustomerList;
+export default User;

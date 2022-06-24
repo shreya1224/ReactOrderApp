@@ -49,6 +49,7 @@ const ProductList = () => {
         <table className="table table-bordered table-striped" id="tabp">
           <thead className="thead-dark">
             <tr>
+              <th> Product Id</th>
               <th> Product name</th>
               <th> Price</th>
               <th> Actions </th>
@@ -57,6 +58,7 @@ const ProductList = () => {
           <tbody>
             {products.map((product) => (
               <tr key={product.id}>
+                <td>{product.id}</td>
                 <td>{product.pname}</td>
                 <td>{product.price}</td>
 
