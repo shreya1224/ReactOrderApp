@@ -22,7 +22,6 @@ const Contact = () => {
 
   return (
     <div className="full">
-      <h5 className="con">Contact Us</h5>
       <form
         id="body"
         action={FORM_ENDPOINT}
@@ -30,6 +29,10 @@ const Contact = () => {
         method="POST"
         target="_blank"
       >
+        <p className="con">Contact Us</p>
+        <br></br>
+        <br></br>
+        <br></br>
         <div className="mb-3 pt-0">
           <label className="lab1">Enter your name: </label>
           <input

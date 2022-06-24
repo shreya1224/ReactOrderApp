@@ -194,7 +194,7 @@ input[type="submit"]:hover {
 #body {
   /* background-color: azure; */
   margin-top: 60px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 30px;
@@ -202,9 +202,9 @@ input[type="submit"]:hover {
 
 .con {
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .full {
@@ -212,7 +212,7 @@ input[type="submit"]:hover {
   background: url(../static/10.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 570px;
+  height: 530px;
 }
 .form-control {
   width: auto;

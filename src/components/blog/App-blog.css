@@ -22,12 +22,18 @@
     height: 100%;
     justify-content: center;
   } */
-
-.App {
-  /* background: #fff; */
+.fbody {
   background: url(/src/static/12.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.App {
+  /* background: #fff; */
+  /* background: url(/src/static/12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  opacity: 0.8;
   border-radius: 4px;
   max-width: 100%;
   /* max-width: 900px; */
