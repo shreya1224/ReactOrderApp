@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import "./style.css";
 import { Link } from "react-router-dom";
 import ProductService from "../services/ProductService";
 
@@ -34,17 +35,17 @@ const ProductList = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="plist">
       <br></br>
       <br></br>
       <br></br>
       <h3>List of Products</h3>
       <hr />
       <div>
-        <Link to="/addprod" className="btn btn-primary mb-2">
+        <Link to="/addprod" className="btn  mb-2" id="aprod">
           Add Product
         </Link>
-        <table className="table table-bordered table-striped">
+        <table className="table table-bordered table-striped" id="tabp">
           <thead className="thead-dark">
             <tr>
               <th> Product name</th>
@@ -60,19 +61,20 @@ const ProductList = () => {
 
                 <td>
                   <Link
-                    className="btn btn-info"
+                    className="btn "
+                    id="uprod"
                     to={`/products/edit/${product.id}`}
                   >
-                    Update Product
+                    Edit Product
                   </Link>
 
                   <button
-                    className="btn btn-danger ml-2"
+                    id="dprod"
                     onClick={() => {
                       handleDelete(product.id);
                     }}
                   >
-                    Delete
+                    Delete Product
                   </button>
                 </td>
               </tr>

@@ -44,11 +44,12 @@
   margin-bottom: 20px;
   margin-top: 80px;
   /* margin-right: 100px; */
+  height: 580px;
 }
 
 .App > .form {
   margin-bottom: 50px;
-  margin-top: 41px;
+  margin-top: 61px;
   margin-left: 40%;
 }
 

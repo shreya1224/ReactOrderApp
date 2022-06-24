@@ -139,7 +139,7 @@ input[type="submit"]:hover {
   font-size: 25px;
   text-align: center;
   font-weight: bold;
-  min-height: 470px;
+  min-height: 540px;
   margin-bottom: 20px;
   background-color: rgba(195, 241, 238, 0.2);
 }
@@ -213,7 +213,15 @@ input[type="submit"]:hover {
   background: url(../static/10.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 530px;
+  height: 580px;
+}
+#btnc {
+  color: #616060;
+  margin-left: 700px;
+  background-color: #b2f4dd;
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
 }
 .form-control {
   width: auto;
@@ -245,8 +253,66 @@ input[type="submit"]:hover {
   background-size: cover;
   height: 540px;
 }
-.row{
+.row {
   justify-content: center;
   padding-left: 15%;
+}
+#uprod {
+  background-color: #f0d7bf;
+  color: rgb(0, 0, 0);
+  margin-right: 50px;
+  font-family: "Calibri";
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 40px;
+}
+#dprod {
+  background-color: rgb(231, 116, 116);
+  color: rgb(0, 0, 0);
+  margin-right: 30px;
+  width: 170px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 15px;
+  font-family: "calibri";
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+}
 
+#aprod {
+  background-color: #fcc98e;
+  font-family: calibri;
+  font-weight: bold;
+}
+#tabp {
+  margin-bottom: 190px;
+}
+
+.prhead {
+  text-align: center;
+}
+.prsub {
+  text-align: center;
+}
+#price {
+  margin-left: 555px;
+}
+#pname {
+  margin-left: 550px;
+}
+#svep {
+  margin-left: 600px;
+  width: 100px;
+  background-color: #f0d7bf;
+}
+#bck {
+  margin-left: 610px;
+}
+#sbar {
+  width: 400px;
+}
+.sbtn {
+  width: 80px;
 }

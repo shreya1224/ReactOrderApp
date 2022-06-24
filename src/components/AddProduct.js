@@ -28,7 +28,7 @@ const AddProduct = () => {
       // create
       ProductService.create(product)
         .then((response) => {
-          alert("Product Saved")
+          alert("Product Saved");
           console.log("Product has been added successfully", response.data);
         })
         .catch((error) => {
@@ -39,7 +39,6 @@ const AddProduct = () => {
 
   useEffect(() => {
     if (id) {
-      
       ProductService.get(id)
         .then((product) => {
           setPname(product.data.pname);
@@ -54,10 +53,16 @@ const AddProduct = () => {
 
   return (
     <div className="container">
-      <h3>Add/Update Product</h3>
-      <hr />
       <form>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h3 className="prhead">Add/Update Product</h3>
+        <br></br>
+        <br></br>
         <div className="form-group">
+          <p className="prsub">Product Name:</p>
           <input
             type="text"
             className="form-control col-4"
@@ -67,7 +72,10 @@ const AddProduct = () => {
             placeholder="Enter Product Name"
           />
         </div>
+
+        <br></br>
         <div className="form-group">
+          <p className="prsub">Product Price:</p>
           <input
             type="text"
             className="form-control col-4"
@@ -77,15 +85,19 @@ const AddProduct = () => {
             placeholder="Enter Price"
           />
         </div>
-
+        <br></br>
+        <br></br>
         <div>
-          <button onClick={(o) => saveProduct(o)} className="btn btn-primary">
+          <button onClick={(o) => saveProduct(o)} className="btn " id="svep">
             Save
           </button>
         </div>
       </form>
-      <hr />
-      <Link to="/prodlist">Back to List</Link>
+      <br></br>
+      <br></br>
+      <Link to="/prodlist" id="bck">
+        Back to List
+      </Link>
     </div>
   );
 };
