@@ -7,7 +7,7 @@ export default function ImageHolder() {
       <div className="row">
         <div className="col-lg-4 col-lg-10">
           <Link to="/store/accessories"><img
-            src={require("../static/17.jpg")}
+            src={require("../static/21.jpeg")}
             alt="image1"
             className="img-fluid rounded"
           />

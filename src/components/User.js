@@ -44,11 +44,12 @@ const User = () => {
       <hr />
       <div>
         <Link to="/addcust" className="btn btn-primary mb-2">
-          Add Customer
+          Add User
         </Link>
         <table className="table table-bordered table-striped">
           <thead className="thead-dark">
             <tr>
+            <th> User Id</th>
               <th> Name</th>
               <th> Address</th>
               <th> Actions</th>
@@ -57,6 +58,7 @@ const User = () => {
           <tbody>
             {customers.map((customer) => (
               <tr key={customer.id}>
+                <td>{customer.id}</td>
                 <td>{customer.cname}</td>
                 <td>{customer.caddress}</td>
                 <td>

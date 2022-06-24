@@ -6,7 +6,7 @@ import "./style.css";
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand navbar-light fixed-top">
+      <nav className="navbar navbar-expand navbar-light fixed-top ">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
             <Navbar.Brand href="#home">
