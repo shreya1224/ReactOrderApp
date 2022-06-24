@@ -30,13 +30,12 @@ function About() {
           <br></br>
           <br></br>
           <p class="para">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            Founded in 2022 , qUICK MART believe the best way to deliver a great
+            user experience is by deeply understanding what people want and
+            love. Then deliver the features , messages and content that are most
+            helpful, relevant and timely. That's what makes users happy and
+            loyal. We want customers to be happy because that's what makes our
+            mission successful .
           </p>
         </div>
         <div class="item">
@@ -45,13 +44,9 @@ function About() {
           <br></br>
           <br></br>
           <p class="para">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            We have served over 100+ customers till now. We are super happy with
+            the customer feedbacks . We are even looking forward to adding more
+            features that will make our customers' life more easy.
           </p>
         </div>
         <div class="item">

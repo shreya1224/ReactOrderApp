@@ -22,7 +22,6 @@ const Contact = () => {
 
   return (
     <div className="full">
-      <h5 className="con">Contact Us</h5>
       <form
         id="body"
         action={FORM_ENDPOINT}
@@ -30,6 +29,10 @@ const Contact = () => {
         method="POST"
         target="_blank"
       >
+        <p className="con">Contact Us</p>
+        <br></br>
+        <br></br>
+        <br></br>
         <div className="mb-3 pt-0">
           <label className="lab1">Enter your name: </label>
           <input
@@ -64,11 +67,11 @@ const Contact = () => {
         </div>
         <div className="mb-3 pt-0">
           <button
-            id="btn"
+            id="btnc"
             className=" font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="submit"
           >
-            Send a message
+            Send
           </button>
         </div>
       </form>

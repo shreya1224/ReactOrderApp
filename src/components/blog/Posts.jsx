@@ -4,10 +4,10 @@ import "./App-blog.css";
 import { useNavigate } from "react-router-dom";
 
 function Posts() {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     console.log(e.target.user.value);
 
     if (!e.target.user.value) {
@@ -21,8 +21,8 @@ function Posts() {
       e.target.password.value === "123456" 
     ) {
       // alert("Successfully logged in");
-      navigate("/admin")
-      navigate(0)
+      navigate("/admin");
+      navigate(0);
       e.target.user.value = "";
       e.target.password.value = "";
     } 
@@ -48,7 +48,8 @@ function Posts() {
 
   // render()
   // {
-    return (
+  return (
+    <div className="fbody">
       <div className="App">
         <form className="form" onSubmit={handleSubmit}>
           <div className="input-group">
@@ -65,8 +66,9 @@ function Posts() {
           BACK
         </button>
       </div>
-    );
-//   }
- }
+    </div>
+  );
+  //   }
+}
 
 export default Posts;
