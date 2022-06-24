@@ -28,8 +28,8 @@ const AddProduct = () => {
       // create
       ProductService.create(product)
         .then((response) => {
+          alert("Product Saved")
           console.log("Product has been added successfully", response.data);
-          navigate("/");
         })
         .catch((error) => {
           console.log("Something went wrong", error);
@@ -39,6 +39,7 @@ const AddProduct = () => {
 
   useEffect(() => {
     if (id) {
+      
       ProductService.get(id)
         .then((product) => {
           setPname(product.data.pname);
@@ -84,7 +85,7 @@ const AddProduct = () => {
         </div>
       </form>
       <hr />
-      <Link to="/">Back to List</Link>
+      <Link to="/prodlist">Back to List</Link>
     </div>
   );
 };

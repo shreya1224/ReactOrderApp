@@ -7,13 +7,14 @@
 }
 
 .image {
-  width: 1000px;
-  height: 550px;
+  width: 990px;
+  height: 570px;
   border-radius: 10px;
   padding-top: 6%;
+  padding-top: 2%;
 }
 .navbar {
-  background-color: rgb(60, 155, 174);
+  background-color: rgb(252, 254, 254);
 }
 
 .right-arrow {
@@ -243,4 +244,9 @@ input[type="submit"]:hover {
   background-repeat: no-repeat;
   background-size: cover;
   height: 540px;
+}
+.row{
+  justify-content: center;
+  padding-left: 15%;
+
 }

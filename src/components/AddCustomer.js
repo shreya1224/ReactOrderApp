@@ -30,8 +30,8 @@ const AddCustomer = () => {
       customerService
         .create(customer)
         .then((response) => {
+          alert("Details Saved")
           console.log("Customer added successfully", response.data);
-          navigate("/");
         })
         .catch((error) => {
           console.log("Something went wrong", error);
@@ -86,7 +86,7 @@ const AddCustomer = () => {
         </div>
       </form>
       <hr />
-      <Link to="/">Back to List</Link>
+      <Link to="/custlist">Back to List</Link>
     </div>
   );
 };

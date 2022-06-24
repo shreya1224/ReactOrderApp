@@ -48,7 +48,7 @@ ReactDOM.render(
       <Route path="/buy" element={<AddOrder />} />
       {/* <Route path="/get/products" element={<FetchProduct/>}/>
       <Route path="/save/product" element={<SaveProduct/>}/> */}
-      <Route path="/blog" element={<Blog />}>
+      <Route path="/login" element={<Blog />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
       </Route>
