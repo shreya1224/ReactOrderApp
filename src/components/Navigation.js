@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand navbar-dark  fixed-top">
+      <nav className="navbar navbar-expand navbar-light fixed-top">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
           <Navbar.Brand href="#home">
@@ -51,7 +51,7 @@ function Navigation() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/blog">
+                <NavLink className="nav-link" to="/login">
                   Login
                 </NavLink>
               </li>

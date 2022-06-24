@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import AddProduct from "./components/AddProduct";
 import ProductList from "./components/ProductList";
 import Admin from "./components/Admin";
+import AddOrder from "./components/AddOrder";
 import {
   Navigation,
   Footer,
@@ -19,8 +20,6 @@ import {
   Posts,
   Post,
 } from "./components";
-import WomenStore from "./components/WomenStore";
-import MenStore from "./components/MenStore";
 import Accessories from "./components/Accessories";
 
 ReactDOM.render(
@@ -31,8 +30,6 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
 
-      <Route path="/store/women" element={<WomenStore />} />
-      <Route path="/store/men" element={<MenStore />} />
       <Route path="/store/accessories" element={<Accessories />} />
       <Route path="/admin" element={<Admin />} />
       {/* <Route path="/customers" element={<Customer />}> */}
@@ -48,10 +45,10 @@ ReactDOM.render(
       <Route path="/products/edit/:id" element={<AddProduct />} />
       <Route path="/*" element={<NotFound />} />
       {/* </Route> */}
-
+      <Route path="/buy" element={<AddOrder />} />
       {/* <Route path="/get/products" element={<FetchProduct/>}/>
       <Route path="/save/product" element={<SaveProduct/>}/> */}
-      <Route path="/blog" element={<Blog />}>
+      <Route path="/login" element={<Blog />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
       </Route>

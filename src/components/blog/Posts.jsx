@@ -33,7 +33,7 @@ function Posts() {
   const handleClick = (e) => {
     e.preventDefault();
 
-    alert("Goes to loggin page");
+    alert("Goes to login page");
   };
 
   // render()
