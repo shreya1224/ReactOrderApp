@@ -1,17 +1,17 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import customerService from "../services/customer.service";
+import OrderService from "../services/OrderService";
 
-const CustomerList = () => {
-  const [customers, setCustomers] = useState([]);
+const OrderList = () => {
+  const [order, setOrders] = useState([]);
 
   const init = () => {
-    customerService
+    OrderService
       .getAll()
       .then((response) => {
-        console.log("Printing customers data", response.data);
-        setCustomers(response.data);
+        console.log("Printing orders data", response.data);
+        setOrders(response.data);
       })
       .catch((error) => {
         console.log("Something went wrong", error);
@@ -24,7 +24,7 @@ const CustomerList = () => {
 
   const handleDelete = (id) => {
     console.log("Printing id", id);
-    customerService
+    OrderService
       .remove(id)
       .then((response) => {
         console.log("customer deleted successfully", response.data);
@@ -40,35 +40,23 @@ const CustomerList = () => {
       <br></br>
       <br></br>
       <br></br>
-      <h3>List of Customers</h3>
+      <h3>List of Orders</h3>
       <hr />
       <div>
         <table className="table table-bordered table-striped">
           <thead className="thead-dark">
             <tr>
-            <th> Customer Id</th>
-              <th> Name</th>
-              <th> Address</th>
-              <th> Actions</th>
+              <th> Customer Id</th>
+              <th> Date</th>
+              <th> Quantity</th>
             </tr>
           </thead>
           <tbody>
-            {customers.map((customer) => (
-              <tr key={customer.id}>
-                <td>{customer.id}</td>
-                <td>{customer.cname}</td>
-                <td>{customer.caddress}</td>
-                <td>
-
-                  <button
-                    className="btn btn-danger ml-2"
-                    onClick={() => {
-                      handleDelete(customer.id);
-                    }}
-                  >
-                    Delete
-                  </button>
-                </td>
+            {order.map((order) => (
+              <tr key={order.id}>
+                <td>{order.cust}</td>
+                <td>{order.odate}</td>
+                <td>{order.quantity}</td>
               </tr>
             ))}
           </tbody>
@@ -78,4 +66,4 @@ const CustomerList = () => {
   );
 };
 
-export default CustomerList;
+export default OrderList;

@@ -8,14 +8,15 @@ const AddOrder = () => {
   const [cust, setCust] = useState("");
   const [quantity, setQuantity] = useState("");
   const [pro_id, setPro] = useState("");
+  const [pname, setPname] = useState("");
+  const [price, setPrice] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
 
   const saveOrder = (o) => {
     o.preventDefault();
-    const order = { odate, cust,pro_id, quantity, id};
-
-
+    const order = { odate, cust,pname,price ,quantity, id};
+   
       // create
       OrderService.create(order)
         .then((response) => {
@@ -34,6 +35,8 @@ const AddOrder = () => {
       OrderService.get(id)
         .then((order) => {
           setOdate(order.data.odate);
+          setPname(order.data.pname);
+          setPrice(order.data.price);
           setCust(order.data.cust);
           setPro(order.data.pro_id);
           setQuantity(order.data.quantity);

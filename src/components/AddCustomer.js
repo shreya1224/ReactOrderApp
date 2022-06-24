@@ -7,7 +7,7 @@ const AddCustomer = () => {
   const [cname, setCname] = useState("");
   const [caddress, setCaddress] = useState("");
   const navigate = useNavigate();
-  const { id } = useParams();
+   const { id } = useParams();
 
   const saveCustomer = (e) => {
     e.preventDefault();

@@ -18,10 +18,20 @@ function Posts() {
       alert("Password is required");
     } else if (
       e.target.user.value === "admin" &&
-      e.target.password.value === "123456"
+      e.target.password.value === "123456" 
     ) {
       // alert("Successfully logged in");
       navigate("/admin")
+      navigate(0)
+      e.target.user.value = "";
+      e.target.password.value = "";
+    } 
+    else if (
+      e.target.user.value === "user" &&
+      e.target.password.value === "user" 
+    ) {
+      // alert("Successfully logged in");
+      navigate("/user")
       navigate(0)
       e.target.user.value = "";
       e.target.password.value = "";
