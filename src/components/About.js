@@ -55,13 +55,12 @@ function About() {
           <br></br>
           <br></br>
           <p class="para">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            We build and strengthen our reputation through our customers’ trust,
+            in alignment with our promises and actions. We are responsible,
+            respect each other, dedicated to safety, care for our environment
+            and manage our business ethically. We aim to work together as we can
+            achieve better results through unity. We are passionate about our
+            people, our products and our service excellence.
           </p>
         </div>
       </div>

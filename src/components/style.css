@@ -144,7 +144,9 @@ input[type="submit"]:hover {
   background-color: rgba(195, 241, 238, 0.2);
 }
 .para {
+  padding: 0 10px 0 10px;
   font-size: 15px;
+  text-align: justify;
 }
 .main-heading {
   text-align: center;
