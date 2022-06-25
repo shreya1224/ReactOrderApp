@@ -52,6 +52,15 @@
   transition-duration: 2s;
   transform: scale(1.08);
   animation-duration: 2s;
+  animation: scroll 40% linear infinite;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px*9));
+  }
 }
 .app {
   font-family: sans-serif;
@@ -319,4 +328,62 @@ input[type="submit"]:hover {
 }
 .sbtn {
   width: 80px;
+}
+#webpro{
+  background-color:rgb(250, 183, 170);
+  border-right-width:medium;
+  
+  width: 25%;
+}
+.btn1{
+  background-color: #edbfbf;
+  color: black;
+  font-size: 17px;
+  font-family: "calibri";
+
+  margin-left: 50px;
+  width: 160px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+
+}
+.ab{
+  text-align: center;
+}
+.form1{
+  margin-left: 300px;
+  margin-top: 30px;
+  background-color: #E5E8F0;
+  margin-right: 300px;
+  margin-bottom: 30px;
+  height: 350px;
+ 
+}
+.form-group{
+  padding-bottom: 20px;
+  margin-left: 80px;
+  
+}
+#ab1{
+  padding-top: 30px;
+}
+.btn2{
+  font-size: 17px;
+  font-family: "calibri";
+  margin-left: 70px;
+  width: 160px;
+  background-color: #afdeeb;
+  color: black;
+
+
+}
+.btn3{
+  font-size: 17px;
+  font-family: "calibri";
+  margin-left: 50px;
+  width: 160px;
+  background-color: #b8afeb;
+  color: black;
+
 }

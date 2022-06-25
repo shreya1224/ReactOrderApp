@@ -8,8 +8,8 @@ const AddOrder = () => {
   const [cust, setCust] = useState("");
   const [quantity, setQuantity] = useState("");
   const [pro_id, setPro] = useState("");
-  const [pname, setPname] = useState("");
-  const [price, setPrice] = useState("");
+  // const [pname, setPname] = useState("");
+  // const [price, setPrice] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
 
@@ -35,8 +35,8 @@ const AddOrder = () => {
       OrderService.get(id)
         .then((order) => {
           setOdate(order.data.odate);
-          setPname(order.data.pname);
-          setPrice(order.data.price);
+          // setPname(order.data.pname);
+          // setPrice(order.data.price);
           setCust(order.data.cust);
           setPro(order.data.pro_id);
           setQuantity(order.data.quantity);
@@ -49,10 +49,13 @@ const AddOrder = () => {
 
   return (
     <div className="container">
-      <h3>Place Your Order</h3>
-      <hr />
-      <form>
-        <div className="form-group">
+      <br></br>
+      <br></br>
+      <br></br>
+      <h3 className="ab"><b><u>Place Your Order</u></b></h3>
+
+      <form className="form1">
+        <div className="form-group" id="ab1">
           <input
             type="text"
             className="form-control col-4"
@@ -84,7 +87,7 @@ const AddOrder = () => {
         </div>
         <div className="form-group">
           <input
-            type="number"
+            type="text"
             className="form-control col-4"
             id="quantity"
             value={quantity}
@@ -93,13 +96,15 @@ const AddOrder = () => {
           />
         </div>
         <div>
-          <button onClick={(o) => saveOrder(o)} className="btn btn-primary">
+          <button onClick={(o) => saveOrder(o)} className="btn2 ">
             Place Order
           </button>
+          <Link to="/store/accessories"><button className="btn3">Back to List</button></Link>
         </div>
+        
+      
       </form>
-      <hr />
-      <Link to="/store/accessories">Back to List</Link>
+     
     </div>
   );
 };

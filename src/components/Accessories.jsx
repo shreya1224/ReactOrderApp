@@ -38,31 +38,37 @@ const ProductList = () => {
       <br></br>
       <br></br>
       <br></br>
-      <h3>List of Products</h3>
+      <h3 className="ab"><b><u>List of Products:</u></b></h3>
       <hr />
       <div>
         <table className="table table-bordered table-striped">
           <thead className="thead-dark">
             <tr>
-              <th> Product name</th>
-              <th> Price</th>
-              <th> Actions </th>
+            <th id="webpro"> Product Id</th>
+              <th id="webpro"> Product name</th>
+              <th id="webpro"> Price</th>
+              <th id="webpro">Actions </th>
             </tr>
           </thead>
           <tbody>
             {products.map((product) => (
               <tr key={product.id}>
+                <td>{product.id}</td>
                 <td>{product.pname}</td>
                 <td>{product.price}</td>
 
                 <td>
+                  <div>
                   <Link
-                    className="btn btn-info"
+                     
                     to="/buy"
                   >
-                    Buy
+                    <button className="btn1">
+                      Buy
+                    </button>
+                    
                   </Link>
-
+                  </div>
                  
                 </td>
               </tr>
