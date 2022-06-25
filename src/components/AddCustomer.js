@@ -7,7 +7,7 @@ const AddCustomer = () => {
   const [cname, setCname] = useState("");
   const [caddress, setCaddress] = useState("");
   const navigate = useNavigate();
-   const { id } = useParams();
+  const { id } = useParams();
 
   const saveCustomer = (e) => {
     e.preventDefault();
@@ -19,9 +19,8 @@ const AddCustomer = () => {
       customerService
         .update(customer)
         .then((response) => {
-          alert("Details updated Successfully")
+          alert("Details updated Successfully");
           console.log("Customer data updated successfully", response.data);
-          
         })
         .catch((error) => {
           console.log("Something went wrong", error);
@@ -31,7 +30,7 @@ const AddCustomer = () => {
       customerService
         .create(customer)
         .then((response) => {
-          alert("Details Saved")
+          alert("Details Saved");
           console.log("Customer added successfully", response.data);
         })
         .catch((error) => {
@@ -56,10 +55,16 @@ const AddCustomer = () => {
 
   return (
     <div className="container">
-      <h3>Add/Update Customer</h3>
-      <hr />
       <form>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h3 className="prhead">Add/Update Customer</h3>
+        <br></br>
+        <br></br>
         <div className="form-group">
+          <p className="prsub">Customer Name:</p>
           <input
             type="text"
             className="form-control col-4"
@@ -69,8 +74,9 @@ const AddCustomer = () => {
             placeholder="Enter your name"
           />
         </div>
-
+        <br></br>
         <div className="form-group">
+          <p className="prsub">Customer Price:</p>
           <input
             type="text"
             className="form-control col-4"
@@ -80,14 +86,19 @@ const AddCustomer = () => {
             placeholder="Enter your address"
           />
         </div>
+        <br></br>
+        <br></br>
         <div>
-          <button onClick={(e) => saveCustomer(e)} className="btn btn-primary">
+          <button onClick={(e) => saveCustomer(e)} className="btn " id="svep">
             Save
           </button>
         </div>
       </form>
-      <hr />
-      <Link to="/user">Back to List</Link>
+      <br></br>
+      <br></br>
+      <Link to="/user" id="bck">
+        Back to List
+      </Link>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import customerService from "../services/customer.service";
+import "./style.css";
 
 const User = () => {
   const [customers, setCustomers] = useState([]);
@@ -40,16 +41,17 @@ const User = () => {
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
       <h3>List of Customers</h3>
       <hr />
       <div>
-        <Link to="/addcust" className="btn btn-primary mb-2">
-          Add User
+        <Link to="/addcust" className="btn  mb-2" id="aprod">
+          Add Customer
         </Link>
         <table className="table table-bordered table-striped">
           <thead className="thead-dark">
             <tr>
-            <th> User Id</th>
+              <th> User Id</th>
               <th> Name</th>
               <th> Address</th>
               <th> Actions</th>
@@ -63,19 +65,20 @@ const User = () => {
                 <td>{customer.caddress}</td>
                 <td>
                   <Link
-                    className="btn btn-info"
+                    className="btn "
+                    id="uprod"
                     to={`/customers/edit/${customer.id}`}
                   >
-                    Update
+                    Edit Customer
                   </Link>
 
                   <button
-                    className="btn btn-danger ml-2"
+                    id="dprod"
                     onClick={() => {
                       handleDelete(customer.id);
                     }}
                   >
-                    Delete
+                    Delete Customer
                   </button>
                 </td>
               </tr>

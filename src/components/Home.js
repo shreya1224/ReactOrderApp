@@ -1,17 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import ImageHolder from "./ImageHolder";
 import ImageSlider from "./imageSlider";
 import { SliderData } from "./SliderData";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 // import "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import "./style.css";
+import { Carousel } from "react-bootstrap";
+
 function Home() {
   return (
-    <div>
+    <div className="slides">
       <ImageSlider slides={SliderData} />
       <ImageHolder />
     </div>
   );
 }
+//}
 
 export default Home;

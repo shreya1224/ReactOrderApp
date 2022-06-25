@@ -15,9 +15,8 @@
 }
 .navbar {
   background-color: rgb(252, 254, 254);
-  padding-top:5px;
+  padding-top: 5px;
   height: 10%;
-
 }
 
 .right-arrow {
@@ -261,7 +260,6 @@ input[type="submit"]:hover {
 }
 .row {
   justify-content: center;
-  
 }
 #uprod {
   background-color: #f0d7bf;
@@ -321,4 +319,10 @@ input[type="submit"]:hover {
 }
 .sbtn {
   width: 80px;
+}
+#caddress {
+  margin-left: 555px;
+}
+#cname {
+  margin-left: 550px;
 }
