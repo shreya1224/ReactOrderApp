@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { SliderData } from './SliderData';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import React, { useState } from "react";
+import { SliderData } from "./SliderData";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -19,18 +19,17 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className='slider'>
-      
+    <section className="slider">
       {SliderData.map((slide, index) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
+            className={index === current ? "slide active" : "slide"}
             key={index}
           >
-            < IoIosArrowBack className='left-arrow' onClick={prevSlide} />
-      <IoIosArrowForward className='right-arrow' onClick={nextSlide} />
+            <IoIosArrowBack className="left-arrow" onClick={prevSlide} />
+            <IoIosArrowForward className="right-arrow" onClick={nextSlide} />
             {index === current && (
-              <img src={slide.image} alt='travel image' className='image' />
+              <img src={slide.image} alt="travel image" className="image" />
             )}
           </div>
         );

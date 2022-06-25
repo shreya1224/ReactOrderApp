@@ -14,7 +14,7 @@ function Navigation() {
                 className="logo"
                 src={require("../static/18.jpg")}
                 width="80px"
-                height="15%"
+                height="10%"
                 border-radius="50%"
                 alt="logo"
               />{" "}

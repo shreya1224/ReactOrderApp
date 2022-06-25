@@ -29,13 +29,11 @@
   background-size: cover;
   padding-top: 5px;
 }
-.form{
+.form {
   /* background: url(/src/static/11.jpg); */
-  background-color:rgba( 0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   padding-top: 20px;
   height: 400px;
-  
-
 }
 
 .App {
@@ -60,15 +58,13 @@
 .App > .form {
   /* margin-bottom: 50px;
   margin-top: 10px;*/
-  margin-left: 26%; 
+  margin-left: 30%;
   width: 500px;
-  
-
 }
 
 .input-group {
   margin-bottom: 25px;
- 
+
   margin-left: 21%;
 }
 
@@ -138,7 +134,6 @@ button.secondary {
   background: #c1d7aa;
   width: 200px;
   margin-left: 10%;
-  
 }
 button.secondary:hover {
   background: #a8c787;

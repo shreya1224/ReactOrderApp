@@ -17,17 +17,16 @@ const AddOrder = () => {
     o.preventDefault();
 
     const order = { odate, cust, pro_id, quantity, id };
-   
-      // create
-      OrderService.create(order)
-        .then((response) => {
-            alert("Order placed")
-          console.log("Product has been added successfully", response.data);
-        })
-        .catch((error) => {
-          console.log("Something went wrong", error);
-        });
 
+    // create
+    OrderService.create(order)
+      .then((response) => {
+        alert("Order placed");
+        console.log("Product has been added successfully", response.data);
+      })
+      .catch((error) => {
+        console.log("Something went wrong", error);
+      });
   };
 
   useEffect(() => {

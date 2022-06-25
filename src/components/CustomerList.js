@@ -40,13 +40,14 @@ const CustomerList = () => {
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
       <h3>List of Customers</h3>
       <hr />
       <div>
         <table className="table table-bordered table-striped">
           <thead className="thead-dark">
             <tr>
-            <th> Customer Id</th>
+              <th> Customer Id</th>
               <th> Name</th>
               <th> Address</th>
               <th> Actions</th>
@@ -59,14 +60,14 @@ const CustomerList = () => {
                 <td>{customer.cname}</td>
                 <td>{customer.caddress}</td>
                 <td>
-
                   <button
                     className="btn btn-danger ml-2"
+                    id="dprod"
                     onClick={() => {
                       handleDelete(customer.id);
                     }}
                   >
-                    Delete
+                    Delete Customer
                   </button>
                 </td>
               </tr>

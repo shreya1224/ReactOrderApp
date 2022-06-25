@@ -15,9 +15,8 @@
 }
 .navbar {
   background-color: rgb(252, 254, 254);
-  padding-top:5px;
+  padding-top: 5px;
   height: 10%;
-
 }
 
 .right-arrow {
@@ -157,7 +156,9 @@ input[type="submit"]:hover {
   background-color: rgba(195, 241, 238, 0.2);
 }
 .para {
+  padding: 0 10px 0 10px;
   font-size: 15px;
+  text-align: justify;
 }
 .main-heading {
   text-align: center;
@@ -268,7 +269,6 @@ input[type="submit"]:hover {
 }
 .row {
   justify-content: center;
-  
 }
 #uprod {
   background-color: #f0d7bf;
@@ -329,6 +329,7 @@ input[type="submit"]:hover {
 .sbtn {
   width: 80px;
 }
+<<<<<<< HEAD
 #webpro{
   background-color:rgb(250, 183, 170);
   border-right-width:medium;
@@ -387,3 +388,11 @@ input[type="submit"]:hover {
   color: black;
 
 }
+
+#caddress {
+  margin-left: 555px;
+}
+#cname {
+  margin-left: 550px;
+}
+
