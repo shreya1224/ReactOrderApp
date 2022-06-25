@@ -53,16 +53,20 @@ const AddProduct = () => {
 
   return (
     <div className="container">
-      <form>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h3 className="ab">
+        <b>
+          <u>Add/Update Product</u>
+        </b>
+      </h3>
+      <form className="form1">
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <h3 className="prhead">Add/Update Product</h3>
         <br></br>
         <br></br>
         <div className="form-group">
-          <p className="prsub">Product Name:</p>
+          {/* <p className="prsub">Product Name:</p> */}
           <input
             type="text"
             className="form-control col-4"
@@ -75,7 +79,7 @@ const AddProduct = () => {
 
         <br></br>
         <div className="form-group">
-          <p className="prsub">Product Price:</p>
+          {/* <p className="prsub">Product Price:</p> */}
           <input
             type="text"
             className="form-control col-4"
@@ -88,16 +92,14 @@ const AddProduct = () => {
         <br></br>
         <br></br>
         <div>
-          <button onClick={(o) => saveProduct(o)} className="btn " id="svep">
+          <button onClick={(o) => saveProduct(o)} id="svep">
             Save
           </button>
+          <Link to="/prodlist">
+            <button className="bckc">Back To list</button>
+          </Link>
         </div>
       </form>
-      <br></br>
-      <br></br>
-      <Link to="/prodlist" id="bck">
-        Back to List
-      </Link>
     </div>
   );
 };

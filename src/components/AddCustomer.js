@@ -55,16 +55,20 @@ const AddCustomer = () => {
 
   return (
     <div className="container">
-      <form>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h3 className="ab">
+        <b>
+          <u>Add/Update Customer</u>
+        </b>
+      </h3>
+      <form className="form1">
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <h3 className="prhead">Add/Update Customer</h3>
         <br></br>
         <br></br>
         <div className="form-group">
-          <p className="prsub">Customer Name:</p>
+          {/* <p className="prsub">Customer Name:</p> */}
           <input
             type="text"
             className="form-control col-4"
@@ -76,7 +80,7 @@ const AddCustomer = () => {
         </div>
         <br></br>
         <div className="form-group">
-          <p className="prsub">Customer Address:</p>
+          {/* <p className="prsub">Customer Address:</p> */}
           <input
             type="text"
             className="form-control col-4"
@@ -89,16 +93,14 @@ const AddCustomer = () => {
         <br></br>
         <br></br>
         <div>
-          <button onClick={(e) => saveCustomer(e)} className="btn " id="svep">
+          <button onClick={(e) => saveCustomer(e)} id="svep">
             Save
           </button>
+          <Link to="/user">
+            <button className="bckc">Back To list</button>
+          </Link>
         </div>
       </form>
-     <br></br>
-      <Link to="/user" id="bck">
-        Back To list
-        
-      </Link>
     </div>
   );
 };

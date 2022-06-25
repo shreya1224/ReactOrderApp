@@ -6,6 +6,10 @@ export default function UserList() {
   return (
     <div className="container" id="userlist">
       <div className="m-5 p-5">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <Link to="/user">
           <button className="button1">Register Yourself</button>
         </Link>
@@ -15,7 +19,6 @@ export default function UserList() {
         <Link to="/seeorder">
           <button className="button2">See Your Order</button>
         </Link>
-       
       </div>
     </div>
   );
