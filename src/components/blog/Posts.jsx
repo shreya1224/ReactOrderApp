@@ -31,7 +31,7 @@ function Posts() {
       e.target.password.value === "user" 
     ) {
       // alert("Successfully logged in");
-      navigate("/user")
+      navigate("/userlist")
       navigate(0)
       e.target.user.value = "";
       e.target.password.value = "";

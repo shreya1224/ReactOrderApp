@@ -29,7 +29,7 @@ const Contact = () => {
         method="POST"
         target="_blank"
       >
-        <p className="con">Contact Us</p>
+        <p className="con"><b>Contact Us</b></p>
         <br></br>
         <br></br>
         <br></br>

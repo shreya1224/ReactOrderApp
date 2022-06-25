@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import OrderService from "../services/OrderService";
 
-const OrderList = () => {
+const SeeOrder = () => {
   const [order, setOrders] = useState([]);
 
   const init = () => {
@@ -27,7 +27,7 @@ const OrderList = () => {
     OrderService
       .remove(id)
       .then((response) => {
-        console.log("customer deleted successfully", response.data);
+        console.log("Order deleted successfully", response.data);
         init();
       })
       .catch((error) => {
@@ -43,6 +43,7 @@ const OrderList = () => {
       <h3>List of Orders</h3>
       <hr />
       <div>
+      
         <table className="table table-bordered table-striped">
           <thead className="thead-dark">
             <tr>
@@ -50,6 +51,7 @@ const OrderList = () => {
               <th> Customer Id</th>
               <th> Date</th>
               <th> Quantity</th>
+              <th> Action</th>
             </tr>
           </thead>
           <tbody>
@@ -59,6 +61,17 @@ const OrderList = () => {
                 <td>{order.cid}</td>
                 <td>{order.odate}</td>
                 <td>{order.quantity}</td>
+                <td>
+
+                  <button
+                    id="dprod"
+                    onClick={() => {
+                      handleDelete(order.id);
+                    }}
+                  >
+                    Delete Order
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -68,4 +81,4 @@ const OrderList = () => {
   );
 };
 
-export default OrderList;
+export default SeeOrder;

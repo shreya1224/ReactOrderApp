@@ -10,15 +10,8 @@ function Navigation() {
         <div className="container">
           <NavLink className="navbar-brand" to="/">
             <Navbar.Brand href="#home">
-              <img
-                className="logo"
-                src={require("../static/18.jpg")}
-                width="80px"
-                height="10%"
-                border-radius="50%"
-                alt="logo"
-              />{" "}
-              <strong>qUICK mART</strong>
+             {" "}
+              <strong className="logo">Tienda</strong>
             </Navbar.Brand>
           </NavLink>
           <Form className="d-flex">
@@ -29,7 +22,7 @@ function Navigation() {
               aria-label="Search"
               id="sbar"
             />
-            <Button variant="outline-info" className="sbtn">
+            <Button variant="outline-secondary" className="sbtn">
               Search
             </Button>
           </Form>
@@ -44,12 +37,12 @@ function Navigation() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/about">
-                  About
+                  About Us
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/contact">
-                  Contact
+                  Contact Us
                 </NavLink>
               </li>
               <li className="nav-item">

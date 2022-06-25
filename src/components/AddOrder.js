@@ -5,19 +5,42 @@ import OrderService from "../services/OrderService";
 
 const AddOrder = () => {
   const [odate, setOdate] = useState("");
-  const [cust, setCust] = useState("");
+  const [cid, setCid] = useState("");
   const [quantity, setQuantity] = useState("");
-  const [pro_id, setPro] = useState("");
-  // const [pname, setPname] = useState("");
-  // const [price, setPrice] = useState("");
+  const [pid, setPid] = useState("");
+   const [pname, setPname] = useState("");
+   const [price, setPrice] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
 
   const saveOrder = (o) => {
     o.preventDefault();
 
-    const order = { odate, cust, pro_id, quantity, id };
+   // const order = { odate, cust, pro_id, quantity, id };
+    const pid={
+      pname,
+      price
+    };
+    const order={
+      id,
+      cid,
+      odate,
+      quantity,
+      pid
 
+    };
+    if(id){
+      //update
+      OrderService
+        .update(order)
+        .then((response) => {
+          console.log("Student data updated successfully", response.data);
+          
+        })
+        .catch((error) => {
+          console.log("Something went wrong", error);
+        });
+    } else {
     // create
     OrderService.create(order)
       .then((response) => {
@@ -27,6 +50,7 @@ const AddOrder = () => {
       .catch((error) => {
         console.log("Something went wrong", error);
       });
+    }
   };
 
   useEffect(() => {
@@ -34,10 +58,10 @@ const AddOrder = () => {
       OrderService.get(id)
         .then((order) => {
           setOdate(order.data.odate);
-          // setPname(order.data.pname);
-          // setPrice(order.data.price);
-          setCust(order.data.cust);
-          setPro(order.data.pro_id);
+          setPname(order.data.pname);
+          setPrice(order.data.price);
+          setCid(order.data.cid);
+          setPid(order.data.pid);
           setQuantity(order.data.quantity);
         })
         .catch((error) => {
@@ -68,22 +92,13 @@ const AddOrder = () => {
           <input
             type="text"
             className="form-control col-4"
-            id="cust"
-            value={cust}
-            onChange={(o) => setCust(o.target.value)}
+            id="cid"
+            value={cid}
+            onChange={(o) => setCid(o.target.value)}
             placeholder="Enter Customer Id"
           />
         </div>
-        <div className="form-group">
-          <input
-            type="text"
-            className="form-control col-4"
-            id="pro_id"
-            value={pro_id}
-            onChange={(o) => setPro(o.target.value)}
-            placeholder="Enter Product Id"
-          />
-        </div>
+        
         <div className="form-group">
           <input
             type="text"
@@ -92,6 +107,27 @@ const AddOrder = () => {
             value={quantity}
             onChange={(o) => setQuantity(o.target.value)}
             placeholder="Enter Quantity"
+          />
+        </div>
+        
+        <div className="form-group">
+          <input
+            type="text"
+            className="form-control col-4"
+            id="ordp"
+            value={pname}
+            onChange={(o) => setPname(o.target.value)}
+            placeholder="Enter Product Name"
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            className="form-control col-4"
+            id="ordp"
+            value={price}
+            onChange={(o) => setPrice(o.target.value)}
+            placeholder="Enter Price"
           />
         </div>
         <div>

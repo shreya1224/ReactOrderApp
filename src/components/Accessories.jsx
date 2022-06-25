@@ -47,7 +47,7 @@ const ProductList = () => {
             <th id="webpro"> Product Id</th>
               <th id="webpro"> Product name</th>
               <th id="webpro"> Price</th>
-              <th id="webpro">Actions </th>
+              {/* <th id="webpro">Actions </th> */}
             </tr>
           </thead>
           <tbody>
@@ -57,8 +57,12 @@ const ProductList = () => {
                 <td>{product.pname}</td>
                 <td>{product.price}</td>
 
-                <td>
-                  <div>
+                
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div>
                   <Link
                      
                     to="/buy"
@@ -69,12 +73,6 @@ const ProductList = () => {
                     
                   </Link>
                   </div>
-                 
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
       </div>
     </div>
   );

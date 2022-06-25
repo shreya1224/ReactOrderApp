@@ -18,6 +18,7 @@ const AddProduct = () => {
       //update
       ProductService.update(product)
         .then((response) => {
+          alert("Product Data Updated successfully!");
           console.log("Product data updated successfully", response.data);
         })
         .catch((error) => {

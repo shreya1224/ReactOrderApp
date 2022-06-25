@@ -7,8 +7,8 @@
 }
 
 .image {
-  width: 850px;
-  height: 500px;
+  width: 900px;
+  height: 450px;
   border-radius: 10px;
   padding-top: 6%;
   padding-top: 2%;
@@ -329,7 +329,6 @@ input[type="submit"]:hover {
 .sbtn {
   width: 80px;
 }
-<<<<<<< HEAD
 #webpro{
   background-color:rgb(250, 183, 170);
   border-right-width:medium;
@@ -358,14 +357,20 @@ input[type="submit"]:hover {
   background-color: #E5E8F0;
   margin-right: 300px;
   margin-bottom: 30px;
-  height: 350px;
+  height: 380px;
  
 }
 .form-group{
   padding-bottom: 20px;
   margin-left: 80px;
   
+  
 }
+
+#ordp{
+  margin-left: 86px;
+}
+
 #ab1{
   padding-top: 30px;
 }
@@ -378,6 +383,10 @@ input[type="submit"]:hover {
   color: black;
 
 
+}
+.logo{
+  font-size: 28px;
+  font-family: "Brush Script MT";
 }
 .btn3{
   font-size: 17px;

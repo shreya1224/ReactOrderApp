@@ -76,7 +76,7 @@ const AddCustomer = () => {
         </div>
         <br></br>
         <div className="form-group">
-          <p className="prsub">Customer Price:</p>
+          <p className="prsub">Customer Address:</p>
           <input
             type="text"
             className="form-control col-4"
@@ -94,10 +94,10 @@ const AddCustomer = () => {
           </button>
         </div>
       </form>
-      <br></br>
-      <br></br>
+     <br></br>
       <Link to="/user" id="bck">
-        Back to List
+        Back To list
+        
       </Link>
     </div>
   );

@@ -12,6 +12,8 @@ import Admin from "./components/Admin";
 import AddOrder from "./components/AddOrder";
 import User from "./components/User";
 import OrderList from "./components/OrderList";
+import UserList from "./components/UserList";
+import SeeOrder from "./components/SeeOrder";
 import {
   Navigation,
   Footer,
@@ -35,7 +37,9 @@ ReactDOM.render(
       <Route path="/store/accessories" element={<Accessories />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/user" element={<User />} />
+      <Route path="/userlist" element={<UserList />} />
       <Route path="/orderlist" element={<OrderList />} />
+      <Route path="/seeorder" element={<SeeOrder/>} />
       {/* <Route path="/customers" element={<Customer />}> */}
       <Route exact path="/custlist" element={<CustomerList />} />
       <Route path="/addcust" element={<AddCustomer />} />
